@@ -1,0 +1,17 @@
+meta {
+  name: Actualizar producto
+  type: http
+  seq: 4
+}
+
+put {
+  url: http://localhost:8000/api/products/65acb79d8a9c748fc845d2d1
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "Galletita"
+  }
+}

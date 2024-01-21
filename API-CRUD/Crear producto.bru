@@ -1,0 +1,19 @@
+meta {
+  name: Crear producto
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:8000/api/products
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "gaseosa",
+    "description": "gaseosa coca cola",
+    "price": 10
+  }
+}
